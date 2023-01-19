@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    background-color: rgb(111, 111, 221);
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow:hidden ;
+}
+
+.left{
+    animation:one-car 5s infinite;
+    position:relative;
+}
+
+@keyframes one-car {
+    0%   {left: 0%;}
+    100% {left: 84.5%;}
+}
+
+.left img{
+    width:300px;
+}
+
+.right img{
+    width:300px;
+}
+
+.right{
+    animation: two-car 5s infinite;
+    position:relative;
+}
+
+@keyframes two-car {
+    0%   {right: 0%;}
+    100% {right: 84.5%;}
+}
